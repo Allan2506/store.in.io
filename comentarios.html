@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios - STORE Inc.</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Store.Inc</h1>
+            <button onclick="window.location.href='usuarios.html'">Regresar</button>
+        </div>
+    </header>
+    <div class="container">
+        <div class="info">
+            <h2>Enviar un comentario</h2>
+            <label for="departamento">Comentario para:</label>
+            <select id="departamento" name="departamento" class="dropdown">
+                <option value="almacen">Almacén</option>
+                <option value="venta">Venta</option>
+            </select>
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" placeholder="Escriba su mensaje aquí..." class="textarea"></textarea>
+            <button class="submit-button" onclick="enviarMensaje()">Enviar</button>
+        </div>
+        <div class="products">
+            <!-- Aquí se pueden añadir productos si se desea, pero está vacío en esta página -->
+        </div>
+    </div>
+
+    <script>
+        function enviarMensaje() {
+            const departamento = document.getElementById('departamento').value;
+            const descripcion = document.getElementById('descripcion').value;
+
+            if (!descripcion.trim()) {
+                alert('Por favor, escriba un mensaje en la descripción.');
+                return;
+            }
+
+            if (departamento === 'almacen') {
+                alert(`Mensaje enviado a ${departamento.toUpperCase()}:\n\n${descripcion}`);
+                // Aquí puedes agregar funcionalidad para enviar el mensaje al backend.
+            } else {
+                alert('El mensaje solo puede ser enviado a Almacén en esta versión.');
+            }
+        }
+    </script>
+</body>
+</html>

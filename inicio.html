@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - STORE Inc.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button onclick="window.location.href='usuarios.html'" >Iniciar como usuario</button>
+    </header>
+    <div class="container">
+        <h1>STORE Inc.</h1>
+        <div class="info">
+            <p>Por favor, introduce tu correo electrónico y contraseña para ingresar.</p>
+        </div>
+        <div class="login-box">
+            <form action="login.php" method="post">
+                <input type="text" name="correo" placeholder="Correo electrónico" required>
+                <input type="password" name="contraseña" placeholder="Contraseña" required>
+                <button onclick="window.location.href='login.php'" type="submit">INGRESAR</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

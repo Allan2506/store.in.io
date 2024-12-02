@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STORE Inc.</title>
+    <link rel="stylesheet" href="stylep.css">
+</head>
+<body>
+    <div class="header">
+        STORE Inc.
+        <button onclick="window.location.href='usuarios.html'">Regresar</button>
+    </div>
+    <div class="product-list">
+        <div class="product-item" onclick="toggleDetails(this)">
+            <img src="prinsel.jpg" alt="PRINSEL">
+            <h2>PRINSEL</h2>
+            <p class="contact">tel: 55 7746 7350<br>correo: prinsel@gmail.com</p>
+            <div class="product-details">
+                <div class="product-item">
+                    <img src="triciclo.jpg" alt="Triciclo Trax Dinosaurio">
+                    <h2>Triciclo Trax Dinosaurio</h2>
+                    <p>numero de producto: 138723</p>
+                    <p>Descripción: Triciclo con cabeza de dinosaurio que cuenta con luz y sonido.</p>
+                    <p class="quantity">cant: 16</p>
+                </div>
+                <div class="product-item">
+                    <img src="doll.jpg" alt="Combo Tris Doll">
+                    <h2>Combo Tris Doll</h2>
+                    <p>numero de producto: 4007</p>
+                    <p>Descripción: Set de carriola, cuna y portabebé con estampado de unicornio.</p>
+                    <p class="quantity">cant: 06</p>
+                </div>
+            </div>
+        </div>
+        <div class="product-item" onclick="toggleDetails(this)">
+            <img src="funko.jpg" alt="Funko">
+            <h2>Funko</h2>
+            <p class="contact">tel: (425) 783-3616<br>correo: legal@funko.com</p>
+            <div class="product-details">
+                <!-- Aquí puedes agregar los productos de Funko -->
+            </div>
+        </div>
+        <div class="product-item" onclick="toggleDetails(this)">
+            <img src="lego.jpg" alt="LEGO">
+            <h2>LEGO</h2>
+            <p class="contact">tel: 800 283 3235<br>correo: lego@gmail.com</p>
+            <div class="product-details">
+                <!-- Aquí puedes agregar los productos de LEGO -->
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

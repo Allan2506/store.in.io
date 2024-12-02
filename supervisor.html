@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registros - STORE Inc.</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Store.Inc</h1>
+            <button onclick="window.location.href='inicio.html'">Cerrar sesión</button>
+        </div>
+    </header>
+    <div class="container">
+        <div class="info">
+        </div>
+        <div class="products">
+            <br><br><br>
+            <!-- productos -->
+            <button class="product" onclick="window.location.href='registrar.html'">
+                <img src="caja.png" alt="Product Image">
+                <p>Agregar nuevo artículo</p>
+            </button>
+            <div class="product">
+                <img src="luffy.jpg" alt="Product Image">
+                <p>Pop! Luffy Gear Two<br>Cantidad: 20<br>Precio: $300.00<br>Estado: En venta  <span class="status-dot status-en-venta"></span> En venta</p>
+                <button onclick="increaseQuantity('luffy')">+</button>
+                <button onclick="decreaseQuantity('luffy')">-</button>
+            </div>
+            
+            <div class="product">
+                <img src="triciclo.jpg" alt="Product Image">
+                <p>Triciclo Trax Dinosaurio<br>Cantidad: 16<br>Precio: $900.00<br>Estado: No venta<span class="status-dot status-en-venta"></span> En venta</p>
+                <button onclick="increaseQuantity('luffy')">+</button>
+                <button onclick="decreaseQuantity('luffy')">-</button>
+            </div>
+            <div class="product">
+                <img src="bumpy.jpg" alt="Product Image">
+                <p>Bumpy Bebé: Ankylosaurus<br>Cantidad: 04<br>Precio: $599.00<br>Estado: En venta <span class="status-dot status-en-venta"></span> En venta</p>
+                <button onclick="increaseQuantity('luffy')">+</button>
+                <button onclick="decreaseQuantity('luffy')">-</button>
+            </div>
+            <div class="product">
+                <img src="doll.jpg" alt="Product Image">
+                <p>Combo Tris Doll<br>Cantidad: 06<br>Precio: $1100.00<br>Estado: En venta <span class="status-dot status-en-venta"></span> En venta</p>
+                <button onclick="increaseQuantity('luffy')">+</button>
+                <button onclick="decreaseQuantity('luffy')">-</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

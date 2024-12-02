@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Empleados - STORE Inc.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button onclick="window.location.href='usuarios.html'">Regresar</button>
+    </header>
+    <div class="container">
+        <h1>Iniciar Sesión - STORE Inc.</h1>
+        <div class="info">
+            <p>Ingresa tu código de empleado</p>
+        </div>
+        <div class="login-box">
+            <form action="logine.php" method="post">
+                <input type="number" name="Codigo" placeholder="Código de empleado" required>
+                <button type="submit">INGRESAR</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

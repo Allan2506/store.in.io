@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Ajustar el color de fondo para que coincida con la imagen */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+header {
+    background-color: #DDA8F5; /* Color de fondo del encabezado */
+    width: 100%;
+    padding: 20px 0; /* Ajustar el padding para dar más espacio */
+    text-align: center;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centrando el contenido del encabezado */
+}
+
+.header-content h1 {
+    color: white;
+    font-size: 32px; /* Tamaño de fuente ajustado para el título */
+    margin: 0;
+    font-weight: bold; /* Negrita para el título */
+}
+
+.search-bar {
+    padding: 10px; /* Aumentar el padding */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0e5ff; /* Color de fondo del campo de búsqueda */
+    color: #DDA8F5; /* Color del texto del campo de búsqueda */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px; /* Ajustado para el header fijo */
+    width: 100%;
+    padding: 20px;
+}
+
+.welcome-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 40px; /* Padding ajustado para dar más espacio */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.profile-image {
+    width: 120px; /* Tamaño ajustado de la imagen de perfil */
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #DDA8F5; /* Añadir borde a la imagen de perfil */
+}
+
+h2 {
+    font-size: 28px;
+    color: #DDA8F5; /* Color ajustado para el texto del encabezado */
+    margin: 10px 0;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column; /* Ajustar botones en columna */
+    gap: 20px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background-color: #7a7a7a; /* Color de fondo del botón */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px; /* Ajustar el padding del botón */
+    cursor: pointer;
+    font-size: 18px; /* Ajustar el tamaño de fuente del botón */
+    font-weight: bold;
+    width: 100%; /* Ancho del botón */
+    max-width: 300px; /* Ancho máximo del botón */
+}
+
+button:hover {
+    background-color: #DDA8F5; /* Color del botón al pasar el ratón */
+}
+
